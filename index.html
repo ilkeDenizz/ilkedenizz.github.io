@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlke | Digital Business Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container { width: 90%; max-width: 400px; text-align: center; }
+
+        .profile-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden; 
+            border: 3px solid var(--accent-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #334155;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 { margin: 10px 0; font-size: 26px; }
+        p { color: #94a3b8; margin-bottom: 25px; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+        .links { display: flex; flex-direction: column; gap: 12px; }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background-color: #334155;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .link-item:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .footer { margin-top: 30px; font-size: 13px; color: #64748b; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+        <div class="avatar">
+            <img src="https://github.com/ilkeDenizz.png" alt="Kael">
+        </div>
+        
+        <h1>İlke</h1>
+        <p>🦝 Racoon Dev 💻</p>
+
+        <div class="links">
+            <a href="https://github.com/ilkeDenizz" target="_blank" class="link-item">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/ilke-deniz-karakaş-684843336" target="_blank" class="link-item">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:rownhy@gmail.com" class="link-item">
+                <i class="fas fa-envelope"></i> Mail
+            </a>
+            <a href="https://t.me/rownhy" target="_blank" class="link-item">
+                <i class="fas fa-paper-plane"></i> Telegram
+            </a>
+            <a href="https://steamcommunity.com/profiles/76561199477834527/" target="_blank" class="link-item">
+                <i class="fab fa-steam"></i> Steam
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Scanned via NFC • 2026
+    </div>
+</div>
+
+</body>
+</html>
